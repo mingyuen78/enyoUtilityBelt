@@ -7,9 +7,9 @@ This is the ultimate utility tools used for enyo app development. Most of it to 
 
 Utility Files
 =============
-- enyo.grappling.hook.js
+- enyo.grappling.hook.js 
 - enyo.validate.screener.js
-- enyo.phonegap.bridge.js 
+- enyo.phonegap.bridge.js (this work in progress)
 
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com
 
