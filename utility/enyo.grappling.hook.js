@@ -201,7 +201,7 @@ enyo.kind({
 		}
 	},
 	encode64 : function(data){
-		return new enyo.base64().encode(data);
+		return new enyo.cyptogear.base64().encode(data);
 	},	
 	failNetwork : function(){
 	  	if(navigator.notification && navigator.notification.alert){

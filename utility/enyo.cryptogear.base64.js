@@ -2,8 +2,11 @@ enyo.kind({
 	/****************************************************************
 	 By : Alex Tam aka Ming Yuen
 	 Website : http://www.isgoodstuff.com
+	 usage : 
+	 var crypto = enyo.cryptogear.base64();
+	 crypto.encode(data);
 	****************************************************************/
-	name: "enyo.base64",
+	name: "enyo.cryptogear.base64",
 	version:"1.0.1",
 	encode: function(data){
 		var b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
