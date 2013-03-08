@@ -91,6 +91,7 @@ enyo.kind({
 						    onSuccessCallBack.call(this, "data:image/jpeg;base64," + imageData);
 						};
 						var onCameraGetFail = function(message) {
+							//Be aware "Camera cancelled" is still an error needed to be handled.
 						    onFailCallBack.call(this, message);
 						};
 		 				navigator.camera.getPicture(onCameraGetSuccess, onCameraGetFail, { quality: iQuality, destinationType: Camera.DestinationType.DATA_URL}); 
