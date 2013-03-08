@@ -11,6 +11,7 @@ Utility Files
 - enyo.grappling.hook.js 
 - enyo.validate.screener.js
 - enyo.phonegap.suit.js (this work in progress)
+- enyo.medikit.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
 
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com
 
