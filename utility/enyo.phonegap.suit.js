@@ -83,11 +83,27 @@ enyo.kind({
 	 			console.log('EXCEPTION : '+e.message);
 	 		}
 	 	},
-	 	getCamera: function(onSuccessCallBack, onFailCallBack){
-	 		try{
-
+	 	getCamera: function(iQuality, onSuccessCallBack, onFailCallBack){
+	 		try{	
+	 			if (arguments.length > 1) {
+	 				if (this.getDeviceReady()){
+		 				var onCameraGetSuccess = function(imageData) {
+						    onSuccessCallBack.call(this, "data:image/jpeg;base64," + imageData);
+						};
+						var onCameraGetFail = function(message) {
+						    onFailCallBack.call(this, message);
+						};
+		 				navigator.camera.getPicture(onCameraGetSuccess, onCameraGetFail, { quality: iQuality, destinationType: Camera.DestinationType.DATA_URL}); 
+						
+					} else {
+						onFailCallBack.call(this, "Device Not Ready");
+					}
+	 			} else {
+	 				console.log('Invalid arguments')
+	 			}
 			}catch(e){
-
+				onFailCallBack.call(this,"Device Camera Not Ready");
+	 			console.log('EXCEPTION : '+e.message);
 			}
 	 	},
 		alert: function(message,title){
