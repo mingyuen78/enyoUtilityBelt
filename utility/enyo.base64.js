@@ -1,4 +1,8 @@
 enyo.kind({
+	/****************************************************************
+	 By : Alex Tam aka Ming Yuen
+	 Website : http://www.isgoodstuff.com
+	****************************************************************/
 	name: "enyo.base64",
 	version:"1.0.1",
 	encode: function(data){

@@ -1,5 +1,9 @@
 enyo.kind({
-	name: "enyo.phonegap.bridge",
+	/****************************************************************
+	 By : Alex Tam aka Ming Yuen
+	 Website : http://www.isgoodstuff.com
+	****************************************************************/
+	name: "enyo.phonegap.suit",
 	version:"1.0.1",
 	title:"Alert",
 	latitude:0,

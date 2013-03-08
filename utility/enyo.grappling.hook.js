@@ -1,5 +1,7 @@
 enyo.kind({
 	/****************************************************************
+	 By : Alex Tam aka Ming Yuen
+	 Website : http://www.isgoodstuff.com
 	 This is a standard util class for ajax posting and receiving. 
 	 Centralized to enable native / web communication like spinner 
 	 or centralized error trapping.

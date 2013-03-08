@@ -1,4 +1,8 @@
 enyo.kind({
+	/****************************************************************
+	 By : Alex Tam aka Ming Yuen
+	 Website : http://www.isgoodstuff.com
+	****************************************************************/
 	name: "enyo.validate.screener",
 	version:"1.0.1",
 	validate: function( parentNodeName, onSuccess, onError ){
