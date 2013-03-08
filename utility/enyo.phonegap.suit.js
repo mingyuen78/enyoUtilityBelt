@@ -31,7 +31,7 @@ enyo.kind({
 	 		this.latitude = latitude;
 	 		this.longitude = longtitude;
 	 	},
-	 	getGPSCoordinate: function(onSuccessCallBack,onFailCallBack){
+	 	getGPSCoordinate: function(onSuccessCallBack,onFailCallBack,miliSecs,blockFallBack){
 	 		try{
 	 			if (this.getDeviceReady()){
 	 				var onSuccess = function(position){
@@ -40,13 +40,46 @@ enyo.kind({
 	 				var onError = function(error){
 	 					onFailCallBack.call(this,error);
 	 				};
-	 				navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout:10000});
-	 			}  else {
-	 				onFailCallBack.call(this,"Device Not Ready");
-	 				console.log("Device Not Ready");
+	 				if (arguments.length > 2){
+	 					navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout:miliSecs});
+	 				} else {
+	 					navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout:5000});
+	 				}
+	 				
+	 			} else {
+	 				console.log('Fall Back Glider into Native Browser GPS');
+	 				//Fall Back Glider into Native Browser GPS
+	 				if (navigator.geolocation) {
+	 					if (arguments.length > 3) {
+		 					if (!blockFallBack){  	
+				 				var browserOnSuccess = function(position){
+				 					onSuccessCallBack.call(this,position);
+				 				};
+				 				var browserOnError = function(error){
+				 					onFailCallBack.call(this,error);
+				 				};
+				 				
+				 				navigator.geolocation.getCurrentPosition(browserOnSuccess, browserOnError, {timeout:miliSecs});		
+			 				} else {
+			 					// if it's blocked default error
+			 					console.log("Device/Browser cannot support, arguments requirement not met or security lock");
+			 					onFailCallBack.call(this,"B-GPS Not Ready");
+			 				}
+		 				} else {
+		 					// Did not provide 4th param
+		 					console.log("Device/Browser cannot support GPS");
+		 					onFailCallBack.call(this,"B-GPS Not Ready");
+		 				}
+	 				} else {
+	 					// If all else Fails
+	 					console.log("Device/Browser cannot support GPS");
+	 					onFailCallBack.call(this,"B-GPS Not Ready");	
+	 				}
+	
+	 				
 	 			}
 	 		}catch(e){
-	 			onFailCallBack.call(this,"Device Not Ready");
+ 	 			onFailCallBack.call(this,"Device Not Ready");
 	 			console.log('EXCEPTION : '+e.message);
 	 		}
 	 	},
