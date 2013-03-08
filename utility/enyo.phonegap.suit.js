@@ -8,7 +8,7 @@ enyo.kind({
 	 Usage : 
 	 var PG = enyo.phonegap.suit;
 	 PG.setDeviceReady(true);
-	 
+
 	****************************************************************/
 	name: "enyo.phonegap.suit",
 	statics: {
@@ -17,7 +17,7 @@ enyo.kind({
 		latitude:3.139702,
 		longitude:101.686921,
 		deviceReady:false,
-    	setDeviceReady: function(status){
+        setDeviceReady: function(status){
 			console.log('Device is ready, PhoneGap Ready...');
 			this.deviceReady = status;
  		},
