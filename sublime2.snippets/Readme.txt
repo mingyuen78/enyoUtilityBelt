@@ -1,0 +1,2 @@
+In Windows 7 and 8,
+To be copied to C:\Users\(yourUserFolder)\AppData\Roaming\Sublime Text 2\Packages\User

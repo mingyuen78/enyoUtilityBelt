@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+enyo.kind({
+	name: "name.Kind",
+	kind: "FittableRows", 
+	classes: "enyo-fit enyo-unselectable",
+ 	components: [
+		{   
+			name: "List.Name", 
+			kind: "List", 
+			count: 100, 
+			multiSelect: false, 
+			fit:true, 
+			onSetupItem: "setupItem", 
+			touch:true,
+				components: [
+					{
+						name: "List.Item.Name", 
+						style:'height:50px;padding:15px;border:1px solid #f3f3f3;background-color:#555;', 
+						ontap:'listItemTapped', 
+						components: [
+							{name: "List.Item.Content.Name", content:"List", fit:true, touch:false}
+						]
+					}
+				]
+		}		
+	],
+	create: function(inSender,inEvent){
+		this.inherited(arguments);
+		//Do stuff onCreate
+	},
+	rendered : function(inSender,inEvent){
+		this.inherited(arguments);
+		//Do stuff afterRendered
+	},
+	setupItem : function(inSender,inEvent){
+		//Will Fire when setCount or a number is assigned to count. See Line count: 100, .
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>enyo.list</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

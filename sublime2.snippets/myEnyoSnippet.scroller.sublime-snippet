@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+enyo.kind({
+	name: "kind.Name",
+	kind: "FittableRows", 
+	classes: "enyo-fit enyo-unselectable",
+ 	components: [
+ 		{   	
+			kind: "Scroller",
+			name: "someScrollName",
+			fit:true,
+			touch:true, 
+			thumb:false,
+			components: [
+				{
+					classes:'inflatePadding',
+					components: [
+						{
+							content:"ScrollArea",
+						}
+					],
+				},
+			],
+		},
+	],
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enyo.scroller</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

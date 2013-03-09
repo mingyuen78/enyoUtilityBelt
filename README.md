@@ -13,6 +13,19 @@ Utility Files
 - enyo.phonegap.suit.js (this work in progress)
 - enyo.medikit.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
 
+Sublime Text 2's Snippet
+========================
+- A standard bunch of sublime text 2 snippets
+- Contains tab trigger snippets such as 
+
+1. enyo.component (tab)
+2. enyo.kind (tab)
+3. enyo.control (tab)
+4. enyo.scroller (tab) 
+5. enyo.list (tab)
+6. enyo.errorvalidate (tab), errorHandler for validate.screener.js
+
+
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

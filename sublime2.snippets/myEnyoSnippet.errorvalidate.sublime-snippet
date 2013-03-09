@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+	onErrorValidate: function(results){
+		alert("Please fill up the fields with valid input to proceed");
+		for (var i = 0; i < results.errors.length; i++) {
+			results.errors[i].controller.setValue("");
+			results.errors[i].controller.setAttribute("placeholder", "");
+			results.errors[i].controller.setAttribute("placeholder", results.errors[i].message);		
+		};
+	},
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enyo.error</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

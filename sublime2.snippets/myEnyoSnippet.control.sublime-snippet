@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+enyo.kind({
+    name: "ControlName",
+    kind: "Control",
+    components: [
+        {
+        	tag:"div",
+        	content: "This is Control"
+        }
+    ]
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enyo.control</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
