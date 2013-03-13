@@ -11,7 +11,7 @@ Utility Files
 - Grappler.js 
 - Validator.js
 - PhoneGapSuit.js (this work in progress)
-- BluePrint.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
+- CSSKit base.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
 
 Sublime Text 2's Snippet
 ========================
