@@ -5,6 +5,8 @@ Version 1.01
 
 This is the ultimate utility tools used for enyo app development. Most of it to ease the development when deploying into PhoneGap and will exclude phonegap codes when it's deployed on pure web app.
 
+[NEW] I've ADDED Sample folder on how to use all the libraries,CSSKit and components 
+
 Utility Files
 =============
 - Base64.js
