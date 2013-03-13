@@ -7,11 +7,11 @@ This is the ultimate utility tools used for enyo app development. Most of it to 
 
 Utility Files
 =============
-- enyo.cryptogear.base64.js
-- enyo.grappling.hook.js 
-- enyo.validate.screener.js
-- enyo.phonegap.suit.js (this work in progress)
-- enyo.medikit.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
+- Base64.js
+- Grappler.js 
+- Validator.js
+- PhoneGapSuit.js (this work in progress)
+- BluePrint.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
 
 Sublime Text 2's Snippet
 ========================
@@ -23,7 +23,7 @@ Sublime Text 2's Snippet
 3. enyo.control (tab)
 4. enyo.scroller (tab) 
 5. enyo.list (tab)
-6. enyo.errorvalidate (tab), errorHandler for validate.screener.js
+6. enyo.error(tab), errorHandler for gears.Validator.js
 
 
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com
