@@ -251,3 +251,15 @@ input.errorPlaceholder::-moz-placeholder, textarea.errorPlaceholder::-moz-placeh
 input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placeholder {
   color: red;
 }
+
+.truncate {
+	overflow:hidden !important;
+	text-overflow:ellipsis !important;
+	white-space:nowrap !important;
+}
+
+.remove-truncate {
+	overflow:show !important;
+	text-overflow:clip !important;
+	white-space:normal !important;	
+}
