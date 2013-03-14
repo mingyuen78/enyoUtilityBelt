@@ -5,7 +5,8 @@ Version 1.01
 
 This is the ultimate utility tools used for enyo app development. Most of it to ease the development when deploying into PhoneGap and will exclude phonegap codes when it's deployed on pure web app.
 
-[NEW] I've ADDED Sample folder on how to use all the libraries,CSSKit and components 
+[NEW] I've ADDED Sample folder on how to use all the libraries,CSSKit and components. Best possible combination is to
+copy the util folder into lib then target it inside package.js $lib/util 
 
 Utility Files
 =============
@@ -25,7 +26,7 @@ Sublime Text 2's Snippet
 3. enyo.control (tab)
 4. enyo.scroller (tab) 
 5. enyo.list (tab)
-6. enyo.error(tab), errorHandler for gears.Validator.js
+6. enyo.error(tab), errorHandler for Validator.js
 
 
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com

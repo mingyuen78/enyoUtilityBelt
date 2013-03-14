@@ -1,7 +1,7 @@
 enyo.kind({
 	name: "App",
 	kind: "FittableRows",
-	phoneGap: gears.PhoneGapSuit, 
+	phoneGap: util.PhoneGapSuit, 
 	classes: "enyo-fit enyo-unselectable appBG inflatePadding",
 	components: [
 		{
@@ -74,7 +74,7 @@ enyo.kind({
  	},
  	validateThis : function(inSender,inEvent){
  		var self = this;
- 		var validateUtil = new gears.Validator();
+ 		var validateUtil = new util.Validator();
  		validateUtil.validate(this.$.formLogin,onSuccessValidate,onFailValidate);
  		function onSuccessValidate(results){
  			console.log(results);

@@ -7,7 +7,7 @@ enyo.kind({
 	 or centralized error trapping.
 	 Dependency : Base64.js loaded first.                                
 	****************************************************************/
-	name:"gears.Grappler",
+	name:"util.Grappler",
 	version:"1.0.1",
 	url:"http://localhost",
 	timeout:3000,

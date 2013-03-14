@@ -3,7 +3,7 @@ enyo.kind({
 	 By : Alex Tam aka Ming Yuen
 	 Website : http://www.isgoodstuff.com
 	****************************************************************/
-	name: "gears.Validator",
+	name: "util.Validator",
 	version:"1.0.1",
 	validate: function( parentNodeName, onSuccess, onError ){
 		var allComponents = [];
