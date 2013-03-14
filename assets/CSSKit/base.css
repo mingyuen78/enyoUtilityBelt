@@ -52,22 +52,22 @@
 	border-bottom-right-radius: 0.6em !important;
 }
 
-.roundedTop .inner {
-	-moz-border-radius-topleft: 0.3em !important;
-	-webkit-border-top-left-radius: 0.3em !important;
-	border-top-left-radius: 0.3em !important;
-	-moz-border-radius-topright: 0.3em !important;
-	-webkit-border-top-right-radius: 0.3em !important;
-	border-top-right-radius: 0.3em !important;
+.roundedTop.inner {
+	-moz-border-radius-topleft: 0.36em !important;
+	-webkit-border-top-left-radius: 0.36em !important;
+	border-top-left-radius: 0.36em !important;
+	-moz-border-radius-topright: 0.36em !important;
+	-webkit-border-top-right-radius: 0.36em !important;
+	border-top-right-radius: 0.36em !important;
 }
 
-.roundedBottom .inner {
-	-moz-border-radius-bottomleft: 0.3em !important;
-	-webkit-border-bottom-left-radius: 0.3em !important;
-	border-bottom-left-radius: 0.3em !important;
-	-moz-border-radius-bottomright: 0.3em !important;
-	-webkit-border-bottom-right-radius: 0.3em !important;
-	border-bottom-right-radius: 0.3em !important;
+.roundedBottom.inner {
+	-moz-border-radius-bottomleft: 0.36em !important;
+	-webkit-border-bottom-left-radius: 0.36em !important;
+	border-bottom-left-radius: 0.36em !important;
+	-moz-border-radius-bottomright: 0.36em !important;
+	-webkit-border-bottom-right-radius: 0.36em !important;
+	border-bottom-right-radius: 0.36em !important;
 }
 
 .marginTop-15px {
@@ -75,55 +75,55 @@
 }
 
 .setWidthFull {
-	width:100%;
+	width:100% !important;
 }
 
 .setWidth100 {
-	width:100%;
+	width:100% !important;
 }
 
 .setWidth90 {
-	width:90%;
+	width:90% !important;
 }
 
 .setWidth80 {
-	width:80%;
+	width:80% !important;
 }
 
 .setWidth70 {
-	width:70%;
+	width:70% !important;
 }
 
 .setWidth75 {
-	width:75%;
+	width:75% !important;
 }
 
 .setWidth60 {
-	width:60%;
+	width:60% !important;
 }
 
 .setWidth50 {
-	width:50%;
+	width:50% !important;
 }
 
 .setWidth40 {
-	width:40%;
+	width:40% !important;
 }
 
 .setWidth30 {
-	width:30%;
+	width:30% !important;
 }
 
 .setWidth25 {
-	width:25%;
+	width:25% !important;
 }
 
 .setWidth10 {
-	width:10%;
+	width:10% !important;
 }
 
 .setWidth5 {
-	width:5%;
+	width:5% !important;
 }
 
 .borderless {
@@ -190,7 +190,7 @@
 }
 
 .hidden {
-	display:none;
+	display:none !important;
 }
 
 .camo {
@@ -231,9 +231,9 @@
 }
 
 input:focus, textarea:focus, button, div {
-	-webkit-tap-highlight-color: rgba(0,0,0,0); 	
+	-webkit-tap-highlight-color: rgba(0,0,0,0) !important; 	
     outline:none !important;
-    -webkit-appearance:none;
+    -webkit-appearance:none !important;
  }
 
 .inputFixer {
