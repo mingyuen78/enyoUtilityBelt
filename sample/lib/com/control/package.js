@@ -3,6 +3,6 @@
 	This is necessary to keep paths correct for the minification process
 */
 enyo.depends(
-	"control",
-	"component"
+	"CartPrice.js",
+	"ItemImageView.js"
 );

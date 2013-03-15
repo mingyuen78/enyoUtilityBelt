@@ -16,6 +16,20 @@ Utility Files
 - PhoneGapSuit.js (this work in progress)
 - CSSKit base.css (various fixes in IOS/Android e.g. overlay, hardware acceleration)
 
+Common Classes
+==============
+Divided into control and component. Control is basically interactable UI element of enyo. You can include them using kind:"InsertControlNameHere" when you are doing your pages. Components is more like classes. Situated in com folder inside lib. 
+
+Common - Control
+================
+- CartPrice.js - a simple control stylable in any form. Auto format currency once a value is set on it.
+- ItemImageView.js - just setSize and setSrc to it, the spinner will appear when image is not loaded.
+
+Common - Component
+==================
+- Global.js (A global appwise singleton, capable of storage localstorage in any form include object and also push pop memory item - usually used for history recalling values like navigation etc)
+
+
 Sublime Text 2's Snippet
 ========================
 - A standard bunch of sublime text 2 snippets

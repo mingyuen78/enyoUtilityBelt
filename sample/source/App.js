@@ -1,7 +1,9 @@
 enyo.kind({
 	name: "App",
 	kind: "FittableRows",
-	phoneGap: util.PhoneGapSuit, 
+	// Imports statics here for ease of usage.
+	phoneGap: util.PhoneGapSuit,
+	global: com.Global, 
 	classes: "enyo-fit enyo-unselectable appBG inflatePadding",
 	components: [
 		{
@@ -70,7 +72,14 @@ enyo.kind({
 	
 	create: function(inSender,inEvent) {
 		this.inherited(arguments);
-		
+		//Always start your code below this.inherited.
+		var MyObject = [];
+		MyObject.name = "Alex";
+		MyObject.age = 10;
+
+		//Stores an object to global static
+		this.global.setObject("People",MyObject);
+		console.log(this.global.getObject("People")); 
  	},
  	validateThis : function(inSender,inEvent){
  		var self = this;
