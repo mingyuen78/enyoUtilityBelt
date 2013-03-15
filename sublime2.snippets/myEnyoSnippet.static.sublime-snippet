@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+enyo.kind({
+	name: "your.StaticClassName",
+	statics: {   
+			version:"1.0.0",
+			yourStaticFunction:function(){
+				//Do Something
+			}
+	}		
+});]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enyo.static</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
