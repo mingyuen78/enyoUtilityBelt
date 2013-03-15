@@ -12,10 +12,11 @@
 *************************************************************************************/
 enyo.kind({
     name:"com.ItemImageView",
-    version:"1.0.0",
+    version:"1.0.1",
     kind:"Control",
     tag:"div",
     style:"text-align:center !important",
+    noSpinner: false,
     darkMode: true,
     components: [
         {
@@ -35,7 +36,12 @@ enyo.kind({
     ],
     create: function(inSender,inEvent){
         this.inherited( arguments );
-        this.setSize("65px","65px");    
+        this.setSize("65px","65px");
+        this.setPosition(this.position); 
+        if (this.noSpinner){
+            this.$.spinnerView.hide();
+        }
+        this.setAltStyle(this.darkMode);    
     },
     setSize: function(width,height){
         this.applyStyle("width",  width);
