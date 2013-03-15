@@ -27,6 +27,9 @@ Sublime Text 2's Snippet
 4. enyo.scroller (tab) 
 5. enyo.list (tab)
 6. enyo.error(tab), errorHandler for Validator.js
+7. enyo.slist(tab), creates a list without kind
+8. enyo.layoutkind(tab), creates a layoutkind used in defining style for kind
+9. enyo.static(tab), creates an empty sample static component
 
 
 The MIT License Copyright (c) 2013 Ming Yuen Tutorial Tech Blog : http://www.isgoodstuff.com
