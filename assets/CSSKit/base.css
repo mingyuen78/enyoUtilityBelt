@@ -74,12 +74,16 @@
 	margin-top:15px !important;
 }
 
-.setWidthFull {
+.setWidth100, .setWidthFull {
 	width:100% !important;
 }
 
-.setWidth100 {
-	width:100% !important;
+.setWidth98 {
+	width:98% !important;
+}
+
+.setWidth95 {
+	width:95% !important;
 }
 
 .setWidth90 {
@@ -89,6 +93,11 @@
 .setWidth80 {
 	width:80% !important;
 }
+
+.setWidth85 {
+	width:85% !important;
+}
+
 
 .setWidth70 {
 	width:70% !important;
@@ -118,12 +127,20 @@
 	width:25% !important;
 }
 
+.setWidth15 {
+	width:15% !important;
+}
+
 .setWidth10 {
 	width:10% !important;
 }
 
 .setWidth5 {
 	width:5% !important;
+}
+
+.setWidth2 {
+	width:2% !important;
 }
 
 .borderless {
