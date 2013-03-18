@@ -1,6 +1,7 @@
 @charset 'UTF-8';
-/*
- *  Font Awesome 3.0.2
+/*	By : Ming Yuen;
+ *  website : htttp://www.isgoodstufff.com
+ *  Combine with Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
  *  -------------------------------------------------------
  */
@@ -70,9 +71,54 @@
 	border-bottom-right-radius: 0.36em !important;
 }
 
+.marginTop-0px {
+	margin-top:0px !important;
+}
+
+.marginTop-5px {
+	margin-top:5px !important;
+}
+
+.marginTop-10px {
+	margin-top:10px !important;
+}
+
 .marginTop-15px {
 	margin-top:15px !important;
 }
+
+.marginTop-30px {
+	margin-top:30px !important;
+}
+
+.marginTop-45px {
+	margin-top:45px !important;
+}
+
+.marginBottom-0px {
+	margin-bottom:0px !important;
+}
+
+.marginBottom-5px {
+	margin-bottom:5px !important;
+}
+
+.marginBottom-10px {
+	margin-bottom:10px !important;
+}
+
+.marginBottom-15px {
+	margin-bottom:15px !important;
+}
+
+.marginBottom-30px {
+	margin-bottom:30px !important;
+}
+
+.marginBottom-45px {
+	margin-bottom:45px !important;
+}
+
 
 .setWidth100, .setWidthFull {
 	width:100% !important;
