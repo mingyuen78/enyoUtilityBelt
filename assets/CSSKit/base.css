@@ -1,7 +1,7 @@
 @charset 'UTF-8';
-/*	By : Ming Yuen;
- *  website : htttp://www.isgoodstufff.com
- *  Combine with Font Awesome 3.0.2
+/*  By : Ming Yuen
+ *  website : http://www.isgoodstuff.com
+ *  Integrated with Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
  *  -------------------------------------------------------
  */
@@ -71,6 +71,17 @@
 	border-bottom-right-radius: 0.36em !important;
 }
 
+.pillButton {
+	-moz-border-radius: 0.6em !important;
+	-webkit-border-radius: 0.6em !important;
+	border-radius: 0.6em !important;
+	padding:3px;
+ 	font-weight: 600;
+	text-align: center;
+	background: #cccccc;
+	font-size: 0.8em;
+}
+
 .marginTop-0px {
 	margin-top:0px !important;
 }
@@ -118,7 +129,6 @@
 .marginBottom-45px {
 	margin-bottom:45px !important;
 }
-
 
 .setWidth100, .setWidthFull {
 	width:100% !important;
