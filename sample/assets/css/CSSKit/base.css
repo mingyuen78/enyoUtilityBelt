@@ -6,8 +6,12 @@
  *  -------------------------------------------------------
  */
  @import url("font-awesome.min.css");
-
  /*  ------------------------------------------------------- */
+
+@-ms-viewport {
+     width: device-width;
+     height:device-height;
+}
 
 .reset {
 	margin:0 !important;

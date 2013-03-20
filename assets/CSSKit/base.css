@@ -9,6 +9,11 @@
 
  /*  ------------------------------------------------------- */
 
+@-ms-viewport {
+     width: device-width;
+     height:device-height;
+}
+
 .reset {
 	margin:0 !important;
 	padding: 0 !important;
