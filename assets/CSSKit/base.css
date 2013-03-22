@@ -268,25 +268,25 @@
 
 .hwaccel,
 .steroid {
-	-webkit-transform: translate3d(0,0,0);
-  	-moz-transform: translate3d(0,0,0);
-  	-ms-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0) !important;
+  	-moz-transform: translate3d(0,0,0) !important;
+  	-ms-transform: translate3d(0,0,0) !important;
 }
 
 .txtAlignJustify {
-	text-align:justify;
+	text-align:justify !important;
 }
 
 .txtAlignLeft {
-	text-align:left;
+	text-align:left !important;
 }
 
 .txtAlignRight {
-	text-align:right;
+	text-align:right !important;
 }
 
 .txtAlignCenter {
-	text-align:center;
+	text-align:center !important;
 }
 
 .boxShadow {
