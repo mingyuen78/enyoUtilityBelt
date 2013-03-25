@@ -6,5 +6,6 @@ enyo.depends(
 	"IconButton.js",
 	"HDialPicker.js",
 	"CartPrice.js",
+	"ContactForm.js",
 	"ItemImageView.js"
 );
