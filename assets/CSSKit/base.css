@@ -416,3 +416,51 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	-moz-transform:  rotate(5deg);
 	-ms-transform: rotate(5deg);
 }
+
+.paddingTop-5px {
+	padding-top:5px !important;
+}
+
+.paddingTop-10px {
+	padding-top:10px !important;
+}
+
+.paddingTop-15px {
+	padding-top:15px !important;
+}
+
+.paddingBottom-5px {
+	padding-bottom:5px !important;
+}
+
+.paddingBottom-10px {
+	padding-bottom:10px !important;	
+}
+
+.paddingBottom-15px {
+	padding-bottom:15px !important;
+}
+
+.paddingLeft-5px {
+	padding-left:5px !important;
+}
+
+.paddingLeft-10px {
+	padding-left:10px !important;
+}
+
+.paddingLeft-15px {
+	padding-left:15px !important;
+}
+
+.paddingRight-5px {
+	padding-right:5px !important;
+}
+
+.paddingRight-10px {
+	padding-right:10px !important;	
+}
+
+.paddingRight-15px {
+	padding-right:15px !important;
+}
