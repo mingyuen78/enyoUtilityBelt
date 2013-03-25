@@ -4,27 +4,29 @@
 ****************************************************************/
 enyo.kind({
 	name: "util.Validator",
-	version:"1.0.5",
+	version:"1.0.6",
 	allRelevantControls:[],
+	allComponents:[],
+	requiredResults:[],
 	validate: function( parentNodeName, onSuccess, onError ){
-		var allComponents = [];
- 		var requiredResults;
-		
-		var allControls = parentNodeName.controls;
- 		for(var i = 0; i < allControls.length; i++){
-  			allComponents.push(allControls[i]);
+		this.allComponents = [];
+		this.requiredResults = [];
+		for(var i = 0; i < parentNodeName.controls.length; i++){
+  			this.allComponents.push(parentNodeName.controls[i]);
  		}
  		console.log("Validator : There is "+parentNodeName.controls.length + " controls objects detected...");
- 		requiredResults = this.findValidationMode(allComponents);
- 		console.log("Only "+ requiredResults.length + " required for validation");	
- 		var validatedResults = this.validateResults( requiredResults );
+ 		this.requiredResults = this.findValidationMode(this.allComponents);
+ 		console.log("Only "+ this.requiredResults.length + " required for validation");	
+ 		var validatedResults = this.validateResults( this.requiredResults );
  		if (validatedResults.errorCount){
  			//There's errors
  			onError.call(this,validatedResults);
  		} else {
  			onSuccess.call(this,validatedResults);
  		}
- 		
+ 		this.allRelevantControls = [];
+		this.allComponents = [];
+		this.requiredResults = [];
 	},
 	filterKind : function( control ){
 		if(control.attributes.required != null){
@@ -73,6 +75,7 @@ enyo.kind({
 		}
 	},
 	findValidationMode : function( controls ){
+		this.allRelevantControls = [];
  		this.findAllOfAKind(controls);
  		return this.allRelevantControls;
  	},
@@ -201,9 +204,13 @@ enyo.kind({
 						var errorKind = new Object();
 						errorKind.controller = resultArray[i].controller;
 						errorKind.type = "required";
-						errorKind.message = "* "+ errorKind.controller.attributes.placeholder + " required";
-						returnErrorArray.push( errorKind );
+						if ( errorKind.controller.attributes.placeholder.charAt(0) == "*" ) {
+							errorKind.message = errorKind.controller.attributes.placeholder;
+						} else {
+							errorKind.message = "* "+ errorKind.controller.attributes.placeholder + " required";
+						}
 
+						returnErrorArray.push( errorKind );
 						errorCount++;
 					} else {
 						var correctKind = new Object();
@@ -218,7 +225,7 @@ enyo.kind({
 		resultObject.errors = returnErrorArray;
 		resultObject.passes = returnCorrectArray;
 		resultObject.errorCount = errorCount; 
-
+		
 		return resultObject;		
 	},
 });
