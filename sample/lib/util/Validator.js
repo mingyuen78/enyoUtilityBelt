@@ -1,20 +1,22 @@
+/****************************************************************
+ By : Alex Tam aka Ming Yuen
+ Website : http://www.isgoodstuff.com
+****************************************************************/
 enyo.kind({
-	/****************************************************************
-	 By : Alex Tam aka Ming Yuen
-	 Website : http://www.isgoodstuff.com
-	****************************************************************/
 	name: "util.Validator",
-	version:"1.0.1",
+	version:"1.0.5",
+	allRelevantControls:[],
 	validate: function( parentNodeName, onSuccess, onError ){
 		var allComponents = [];
+ 		var requiredResults;
+		
 		var allControls = parentNodeName.controls;
-		for(var i = 0; i < allControls.length; i++){
-  			if (allControls[i].components != null){
- 				allComponents.push(allControls[i]);
- 			}
+ 		for(var i = 0; i < allControls.length; i++){
+  			allComponents.push(allControls[i]);
  		}
- 		var requiredResults = this.findValidationMode(allComponents);
-
+ 		console.log("Validator : There is "+parentNodeName.controls.length + " controls objects detected...");
+ 		requiredResults = this.findValidationMode(allComponents);
+ 		console.log("Only "+ requiredResults.length + " required for validation");	
  		var validatedResults = this.validateResults( requiredResults );
  		if (validatedResults.errorCount){
  			//There's errors
@@ -22,31 +24,58 @@ enyo.kind({
  		} else {
  			onSuccess.call(this,validatedResults);
  		}
+ 		
 	},
-	findValidationMode : function( components ){
-		var allValidatedComponent = [];
-		for(var i = 0; i < components.length; i++){
-			if( components[i].controls[components[i].controls.length-1].kind != null){
- 				var formObject = components[i].controls[components[i].controls.length-1];
-				switch(formObject.kind) {
-					case "Input":
-						if(formObject.attributes.required != null){
-							var matchResult = new Object();
-							matchResult.controller = formObject; 
-							matchResult.mode = formObject.attributes.required;
-							matchResult.value = formObject.getValue();
-  							allValidatedComponent.push(matchResult);
-						}
-							
-					break;
-					case "onyx.Picker":
-						//TODO : May add some form of validation to picker and other form widgets
-					break;
+	filterKind : function( control ){
+		if(control.attributes.required != null){
+			switch(control.kind.toLowerCase()){
+				case "onyx.input":
+					return true;
+				break;
+
+				case "input":
+					return true;
+				break;
+
+				case "onyx.textarea":
+					return true;
+				break;
+
+				case "textarea":
+					return true;
+				break;
+
+				default:
+					return false;
+				break;
+			}
+		} else {
+			return false;
+		}
+	},
+	findAllOfAKind : function( controls ){
+		for(var i = 0; i < controls.length; i++){
+			if (controls[i].controls != null){
+				if (controls[i].controls.length == 0){
+					if (this.filterKind(controls[i])) {
+						this.allRelevantControls.push(
+							{
+								controller:controls[i],
+								mode:controls[i].attributes.required,
+								value:controls[i].getValue()
+							}
+						);
+					}
+				} else {
+					this.findAllOfAKind(controls[i].controls);
 				}
-			}			
- 		}
- 		return allValidatedComponent;
+			}
+		}
 	},
+	findValidationMode : function( controls ){
+ 		this.findAllOfAKind(controls);
+ 		return this.allRelevantControls;
+ 	},
 	validateResults : function(resultArray) {
 		var returnErrorArray = [];
 		var returnCorrectArray = [];
