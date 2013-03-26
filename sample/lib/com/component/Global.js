@@ -8,6 +8,7 @@ enyo.kind({
 			version:"1.0.1",
 			globalStack: [],
 			globalObject: [],
+			globalNav: [],
  			storeLocal:function(key, value){
 				console.log("Storing to : " + key);
 				console.log("With Payload : " + key);
@@ -50,7 +51,23 @@ enyo.kind({
 			},
 			popStack:function(value){
 				return this.globalStack.pop();
+			},
+			setNavData:function(value){
+				this.globalNav.push(value);	
+			},
+			getNavData:function(){
+				this.globalNav.pop(value);	
+			},
+			resetNavData:function(){
+				this.globalNav = [];
+			},
+			resetGlobalStack:function(){
+				this.globalStack = [];
+			},
+			resetAll:function(){
+				this.reset();
+				this.resetNavData();
+				this.resetGlobalStack();
 			}
-			
 	}		
 });
