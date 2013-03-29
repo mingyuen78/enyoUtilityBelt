@@ -299,7 +299,7 @@
 	text-shadow: 0px -2px 2px rgba(0,0,0,.3) !important;
 }
 
-input:focus, textarea:focus, button, div {
+input:focus, textarea:focus, button, div, select {
 	-webkit-tap-highlight-color: rgba(0,0,0,0) !important; 	
     outline:none !important;
     -webkit-appearance:none !important;
