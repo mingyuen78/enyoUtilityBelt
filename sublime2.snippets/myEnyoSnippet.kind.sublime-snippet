@@ -7,8 +7,8 @@ enyo.kind({
 	components: [
 		{   
 			content:"Hello World",
-			fit:true,	
-		},		
+			fit:true 	
+		} 		
 	],
 	create: function(inSender,inEvent){
 		this.inherited(arguments);
@@ -20,7 +20,7 @@ enyo.kind({
 	},
 	refreshIt: function(){
 		//Custom external function to refresh this component.
-	},
+	} 
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
