@@ -472,3 +472,8 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	width:100%;
 	height:100%;
 }
+
+.likeTableCell {
+	display:table-cell;
+	vertical-align: middle;
+}
