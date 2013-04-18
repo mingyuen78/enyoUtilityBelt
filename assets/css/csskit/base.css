@@ -477,3 +477,25 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	display:table-cell;
 	vertical-align: middle;
 }
+
+.valignBottom {
+	vertical-align: bottom !important;
+}
+
+.valignMiddle {
+	vertical-align: middle !important;
+}
+
+.valignTop {
+	vertical-align: top !important;
+}
+
+.whiteLabel {
+	font-weight: 600 !important;
+	color:#ffffff !important;
+}
+
+.blackLabel {
+	font-weight: 600 !important;
+	color:#000000 !important;
+}
