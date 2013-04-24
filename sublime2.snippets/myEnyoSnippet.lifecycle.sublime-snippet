@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+constructor: function(){
+	this.inherited(arguments);
+},
+create : function(){
+	this.inherited(arguments);
+},
+rendered : function(){
+	this.inherited(arguments);
+},
+published: function(){
+	this.inherited(arguments);
+},
+destroy:function(){
+	this.inherited(arguments);
+}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enyo.lifecycle</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
