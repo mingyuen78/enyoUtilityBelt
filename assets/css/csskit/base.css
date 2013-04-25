@@ -23,6 +23,7 @@
 }
 
 .roundedCorner {
+	overflow:hidden;
 	-moz-border-radius: 0.6em !important;
 	-webkit-border-radius: 0.6em !important;
 	border-radius: 0.6em !important;
@@ -35,6 +36,7 @@
 }
 
 .roundedTop {
+	overflow:hidden;
 	-moz-border-radius-topleft: 0.6em !important;
 	-webkit-border-top-left-radius: 0.6em !important;
 	border-top-left-radius: 0.6em !important;
@@ -44,6 +46,7 @@
 }
 
 .roundedBottom {
+	overflow:hidden;
 	-moz-border-radius-bottomleft: 0.6em !important;
 	-webkit-border-bottom-left-radius: 0.6em !important;
 	border-bottom-left-radius: 0.6em !important;
@@ -53,6 +56,7 @@
 }
 
 .roundedTop.inner {
+	overflow:hidden;
 	-moz-border-radius-topleft: 0.36em !important;
 	-webkit-border-top-left-radius: 0.36em !important;
 	border-top-left-radius: 0.36em !important;
@@ -62,6 +66,7 @@
 }
 
 .roundedBottom.inner {
+	overflow:hidden;
 	-moz-border-radius-bottomleft: 0.36em !important;
 	-webkit-border-bottom-left-radius: 0.36em !important;
 	border-bottom-left-radius: 0.36em !important;
