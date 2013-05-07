@@ -488,6 +488,14 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	padding-right:15px !important;
 }
 
+.padding15px{
+	padding:15px !important;
+}
+
+.padding10px{
+	padding:10px !important;
+}
+
 .networkError {
     background: url('img/noInternet.png') no-repeat !important;
 	background-position: center !important;
