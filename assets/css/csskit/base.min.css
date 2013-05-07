@@ -92,3 +92,4 @@ input.errorPlaceholder::-ms-placeholder,textarea.errorPlaceholder::-ms-placehold
 .valignTop {vertical-align: top !important;}
 .whiteLabel {font-weight: 600 !important;color:#ffffff !important;}
 .blackLabel {font-weight: 600 !important;color:#000000 !important;}
+.inset {}

@@ -530,3 +530,9 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	font-weight: 600 !important;
 	color:#000000 !important;
 }
+
+.inset {
+	-moz-box-shadow:    inset 0 0 15px #ccc;
+    -webkit-box-shadow: inset 0 0 15px #ccc;
+    box-shadow:         inset 0 0 15px #ccc;
+}
