@@ -1,7 +1,7 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
 @import url("font-awesome.min.css");
 @charset 'UTF-8';
- @-ms-viewport {width:device-width;height: device-height;user-zoom: fixed;max-zoom: 1;min-zoom: 1;}.reset{margin:0 !important;padding:0 !important;}
+.reset{margin:0 !important;padding:0 !important;}
 .roundedCorner{overflow:hidden;-moz-border-radius:0.6em !important;-webkit-border-radius:0.6em !important;border-radius:0.6em !important;}
 .resetCorner{-moz-border-radius:0em !important;-webkit-border-radius:0em !important;border-radius:0em !important;}
 .roundedTop{overflow:hidden;-moz-border-radius-topleft:0.6em !important;-webkit-border-top-left-radius:0.6em !important;border-top-left-radius:0.6em !important;-moz-border-radius-topright:0.6em !important;-webkit-border-top-right-radius:0.6em !important;border-top-right-radius:0.6em !important;}
