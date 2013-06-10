@@ -94,4 +94,6 @@ input.errorPlaceholder::-ms-placeholder,textarea.errorPlaceholder::-ms-placehold
 .blackLabel {font-weight: 600 !important;color:#000000 !important;}
 .relative {position:relative !important;}
 .absolute {position:absolute !important;}
-.inset {-moz-box-shadow:inset 0 0 15px #ccc;-webkit-box-shadow:inset 0 0 15px #ccc;box-shadow:inset 0 0 15px #ccc;}
+.insetShadow {-moz-box-shadow:inset 0 0 10px #ccc;-webkit-box-shadow:inset 0 0 10px #ccc;box-shadow:inset 0 0 10px #ccc;}
+.strong {font-weight: bold !important;}
+.em {font-style: italic !important;}
