@@ -480,6 +480,10 @@ input.errorPlaceholder::-ms-placeholder, textarea.errorPlaceholder::-ms-placehol
 	padding-right:15px !important;
 }
 
+.padding20px{
+	padding:20px !important;
+}
+
 .padding15px{
 	padding:15px !important;
 }

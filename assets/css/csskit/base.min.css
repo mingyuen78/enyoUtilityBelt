@@ -83,6 +83,7 @@ input.errorPlaceholder::-ms-placeholder,textarea.errorPlaceholder::-ms-placehold
 .paddingRight-5px{padding-right:5px !important;}
 .paddingRight-10px{padding-right:10px !important;}
 .paddingRight-15px{padding-right:15px !important;}
+.padding20px{padding:20px !important;}
 .padding15px{padding:15px !important;}
 .padding10px{padding:10px !important;}
 .networkError{background:url('img/noInternet.png') no-repeat !important;background-position:center !important;background-size:192px 192px !important;width:100%;height:100%;}
