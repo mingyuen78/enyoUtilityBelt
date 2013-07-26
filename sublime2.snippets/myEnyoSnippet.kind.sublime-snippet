@@ -10,17 +10,14 @@ enyo.kind({
 			fit:true 	
 		} 		
 	],
-	create: function(inSender,inEvent){
+	create: function() {
 		this.inherited(arguments);
 		//Do stuff onCreate
 	},
-	rendered : function(inSender,inEvent){
+	rendered : function() {
 		this.inherited(arguments);
 		//Do stuff afterRendered
-	},
-	refreshIt: function(){
-		//Custom external function to refresh this component.
-	} 
+	}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

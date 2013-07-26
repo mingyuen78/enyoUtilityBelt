@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+	background-color:#ffffff !important;
+	color:#777 !important
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff ), to( #eeeeee )) !important; 
+	background-image: -webkit-linear-gradient( #ffffff , #eeeeee ) !important; 
+	background-image:    -moz-linear-gradient( #ffffff , #eeeeee ) !important; 
+	background-image:     -ms-linear-gradient( #ffffff , #eeeeee ) !important; 
+	background-image:      -o-linear-gradient( #ffffff , #eeeeee ) !important; 
+	background-image:         linear-gradient( #ffffff , #eeeeee ) !important;
+	border:1px solid #aaa !important;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>css.gradient</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
